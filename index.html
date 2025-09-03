@@ -14,7 +14,8 @@
             overflow-x: hidden;
         }
         .glow-text {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0ff, 0 0 20px #0ff, 0 0 25px #0ff, 0 0 30px #0ff, 0 0 35px #0ff;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0ff, 
+                         0 0 20px #0ff, 0 0 25px #0ff, 0 0 30px #0ff, 0 0 35px #0ff;
         }
     </style>
 </head>
@@ -23,7 +24,6 @@
     <!-- Header and Navigation -->
     <header class="py-4 px-8 flex justify-between items-center fixed w-full top-0 left-0 z-50 bg-black bg-opacity-70 backdrop-blur-sm">
         <a href="#" class="text-2xl font-bold tracking-widest uppercase">
-            <!-- Updated RAVERSUS logo with full attributes -->
             <img 
                 width="5148" 
                 height="580" 
@@ -48,7 +48,7 @@
             <div class="relative group">
                 <button class="flex items-center text-white hover:text-cyan-400 transition duration-300">
                     Products
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div class="absolute hidden group-hover:block bg-black p-2 rounded-md shadow-lg mt-2 w-32">
                     <a href="#" class="block px-4 py-2 hover:bg-gray-800 rounded-md transition duration-300">Category 1</a>
@@ -58,7 +58,7 @@
             <div class="relative group">
                 <button class="flex items-center text-white hover:text-cyan-400 transition duration-300">
                     Become An Affiliate
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div class="absolute hidden group-hover:block bg-black p-2 rounded-md shadow-lg mt-2 w-48">
                     <a href="#" class="block px-4 py-2 hover:bg-gray-800 rounded-md transition duration-300">Affiliate Program</a>
@@ -68,7 +68,7 @@
             <div class="relative group">
                 <button class="flex items-center text-white hover:text-cyan-400 transition duration-300">
                     Research
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div class="absolute hidden group-hover:block bg-black p-2 rounded-md shadow-lg mt-2 w-32">
                     <a href="#" class="block px-4 py-2 hover:bg-gray-800 rounded-md transition duration-300">Studies</a>
@@ -118,8 +118,15 @@
         </video>
         
         <!-- Video for the floating pendant, centered over the background -->
-        <video autoplay loop muted playsinline class="absolute w-1/2 md:w-1/3 max-w-[600px] z-20">
-            <source src="homevideo-comp.mp4" type="video/mp4">
+        <video 
+            class="absolute w-1/2 md:w-1/3 max-w-[600px] z-20 elementor-video" 
+            src="homevideo-comp.mp4" 
+            autoplay 
+            loop 
+            muted 
+            playsinline 
+            controlslist="nodownload" 
+            poster="homevideo-comp.mp4">
         </video>
         
         <!-- Tagline Section -->
